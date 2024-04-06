@@ -30,7 +30,7 @@ const studentRouter = require("./routes/studentRoutes");
 
 app.use(
   cors({
-    origin: ["http://localhost:3000"],
+    origin: ["https://student-result-analyser-frontend.onrender.com"],
     methods: ["POST", "GET", "PUT", "DELETE"], // Replace with your frontend URL
     credentials: true,
   })
