@@ -29,7 +29,7 @@ function Login() {
         try {
           axios.defaults.withCredentials = true;
           if (values.user === "Student") {
-            const response = await axios.post("/api/login/student", values);
+            const response = await axios.post("https://student-result-analyser.onrender.com/api/login/student", values);
             if (response.statusText === "OK") {
               console.log(values);
               console.log(response.statusText);
